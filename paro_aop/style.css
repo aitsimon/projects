@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Gothic A1", sans-serif;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+  height: 0.5vh;
+  padding-bottom: 20%;
+}
+#title {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 3vw;
+  text-align: center;
+}
+#number-days {
+    background-color: rgb(36, 36, 36);
+    padding:2vh 3vw;
+    border-radius: 17px;
+    font-weight: 600;
+    font-size: 5vw;
+    color: #FF2A2A;
+}
+#date {
+    background-color: rgb(36, 36, 36);
+    padding:2vh 15vw;
+    margin-top: -2vh;
+    border-radius: 17px;
+    font-weight: 100;
+    font-size: 3vw;
+}
+small{
+    position: absolute;
+    bottom: 0;
+}
