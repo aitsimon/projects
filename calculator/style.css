@@ -1,0 +1,104 @@
+/*Structure of the calculator*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+.content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#calculator {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 7px;
+  height: 60%;
+  width: 70%;
+}
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+#top {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content: space-around;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+#preview {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+#display {
+  font-size: 3em;
+  font-weight: 500;
+}
+#buttons {
+  height: 70%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.buttonsRow {
+  height: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+.buttonsRow button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 24%;
+  margin-right: 1%;
+  border-radius: 300px;
+}
+#row5{
+    flex-grow: unset;
+}
+#row5 button:nth-of-type(1) {
+  flex-grow: 6;
+}
+/*Customs colors from here*/
+.content{
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+#calculator{
+    border-radius: 17PX;
+    background-color:#1b1c1e;
+}
+#preview{
+    color: white;
+}
+#display{
+    color: white;
+}
+
+.buttonsRow button{
+    color: white;
+    font-size: 1em;
+    background-color: #333333;
+    border: 0;
+}
+.buttonsRow button:hover{
+    background-color: #33333396;
+}
+.buttonsRow button:last-child{
+    background-color: #ff9600;
+}
+.buttonsRow button:last-child:hover{
+    background-color: #ff9500a4;
+}
