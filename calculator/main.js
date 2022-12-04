@@ -33,6 +33,7 @@ window.onload = () => {
             if (regexNumber.test(divDisplay.innerText.concat(char))) {
                 if(operationBefore){
                     divDisplay.innerText = char;
+                    operationBefore=null;
                 }else{
                     divDisplay.innerText += char;
                 }
