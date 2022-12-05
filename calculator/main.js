@@ -4,6 +4,7 @@
  * @date {2022-12-02}
  */
 window.onload = () => {
+    
     // Instance of global variables needed
     var divDisplay = document.getElementById('display');
     var divPreview = document.getElementById('preview');
@@ -16,17 +17,20 @@ window.onload = () => {
         button.addEventListener('click', function (event) {
             processClick(event);
         });
+        
     }
     /**
      * Function to process the click in the different parts of the calculator
      * @param {Event} clickEvent Store the clickEvent
      */
     function processClick(clickEvent) {
+
         var button = clickEvent.target;
         let char = button.innerText
         let regexNumber = /^\d{1,}$|(?=^.{1,}$)^\d+\.\d{0,}$/;
         let operations = ['%', '/', '*', '-', '+'];
         let displayChanges = ['AC', 'DEL', '='];
+
         if (bufferOperation != undefined && operations.includes(char)) {
             alert('Invalid operation');
         } else {
@@ -48,6 +52,7 @@ window.onload = () => {
                 alert('Invalid operation');
             }
         }
+
     }
     /**
      * Function to change the main the display of th calculator, enters in switch with options for different
@@ -55,6 +60,7 @@ window.onload = () => {
      * @param {String} symbol - The symbol pressed on the calculator
      */
     function changeDisplay(symbol) {
+
         switch (symbol) {
             case '=':
                 divPreview.innerText = operate(bufferOperation);
@@ -75,6 +81,7 @@ window.onload = () => {
             default:
                 break;
         }
+
     }
     /**
      * Function to process the the operation process of the calculator. Called when it has been pressed one of

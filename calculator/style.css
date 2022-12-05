@@ -65,6 +65,7 @@
   width: 24%;
   margin-right: 1%;
   border-radius: 300px;
+  cursor: pointer;
 }
 #row5{
     flex-grow: unset;
